@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo Seguro - Consultoria em Defensivos Agrícolas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="toolbar" aria-label="Ferramentas de Acessibilidade">
+        <button id="btn-font-decrease" aria-label="Diminuir texto">A-</button>
+        <button id="btn-font-increase" aria-label="Aumentar texto">A+</button>
+        <button id="btn-contrast" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">Agro<strong>Manejo</strong></div>
+            <nav class="nav-menu">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#depoimentos">Resultados</a>
+                <a href="#faq">Dúvidas</a>
+                <a href="#cta" class="btn btn-secondary">Falar com Especialista</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Consultoria Especializada</span>
+                <h1>Maximize sua safra com manejo químico inteligente e seguro</h1>
+                <p>Reduza o desperdício de defensivos agrícolas, garanta total conformidade com a legislação e proteja sua lavoura contra pragas com precisão técnica.</p>
+                <div class="hero-actions">
+                    <a href="#cta" class="btn btn-primary">Garantir Diagnóstico Gratuito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Por que otimizar a aplicação de agroquímicos na sua propriedade?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Economia Real</h3>
+                    <p>Redução de até 25% nos custos com defensivos através da regulagem exata de maquinários e dosagem precisa por hectare.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Risco Zero Jurídico</h3>
+                    <p>Adequação completa às normas do MAPA, ANVISA e órgãos ambientais, blindando sua propriedade contra multas.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Produtividade Elevada</h3>
+                    <p>Combate eficaz de pragas e doenças sem causar fitotoxicidade na cultura, preservando o potencial do solo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Resultados de Quem Confia</h2>
+            <div class="carousel-container">
+                <div id="carousel-track" class="carousel-track"></div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" aria-label="Depoimento anterior">&lt;</button>
+                    <button id="carousel-next" aria-label="Próximo depoimento">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div id="faq-accordion" class="accordion-container"></div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+        <div class="container cta-container">
+            <h2>Pronto para transformar a eficiência da sua lavoura?</h2>
+            <p>Fale agora com um engenheiro agrônomo especialista e receba uma análise preliminar gratuita do plano de manejo da sua propriedade.</p>
+            <form class="cta-form" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe entrará em contato.');">
+                <input type="text" placeholder="Seu Nome" required aria-label="Seu Nome">
+                <input type="email" placeholder="Seu Melhor E-mail" required aria-label="Seu Melhor E-mail">
+                <input type="tel" placeholder="Seu WhatsApp" required aria-label="Seu WhatsApp">
+                <button type="submit" class="btn btn-primary">Quero Meu Diagnóstico</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 AgroManejo Consultoria. Todos os direitos reservados. Uso consciente e responsável de defensivos agrícolas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
